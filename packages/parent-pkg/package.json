@@ -1,0 +1,12 @@
+{
+  "name": "parent-pkg",
+  "private": true,
+  "version": "1.0.0",
+  "exports": {
+    ".": "./index.mjs",
+    "./give-this-to-my-child": "./give-this-to-my-child.mjs"
+  },
+  "dependencies": {
+    "child-pkg": "1.0.0"
+  }
+}

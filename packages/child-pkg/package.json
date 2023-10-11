@@ -1,0 +1,11 @@
+{
+  "name": "child-pkg",
+  "private": true,
+  "version": "1.0.0",
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "peerDependencies": {
+    "parent-pkg": "1.0.0"
+  }
+}

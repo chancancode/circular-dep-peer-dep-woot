@@ -1,0 +1,21 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/child-pkg:
+    dependencies:
+      parent-pkg:
+        specifier: 1.0.0
+        version: link:../parent-pkg
+
+  packages/parent-pkg:
+    dependencies:
+      child-pkg:
+        specifier: 1.0.0
+        version: link:../child-pkg
